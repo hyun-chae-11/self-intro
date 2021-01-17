@@ -1,0 +1,32 @@
+nav{
+    height: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffffd5;
+    position: fixed;
+}
+nav ul{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+nav img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    position: relative;
+    left: 25%;
+    filter: invert(56%) sepia(2%) saturate(1210%) hue-rotate(314deg) brightness(102%) contrast(94%);
+    transition: 0.5s;
+}
+
+nav img::selection{background-color: transparent;}
+
+nav img:hover{
+    filter: invert(0%) sepia(70%) saturate(0%) hue-rotate(269deg) brightness(89%) contrast(106%);
+}

@@ -1,0 +1,83 @@
+*{margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: middle;}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    background-image: url(../img/bkground.png);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.me{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid #ACADD3;
+    position: relative;
+    top: 10px;
+    left: 40%;
+}
+.name{
+    margin-top: 9px;
+    font-size:x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sns img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    bottom: 8px;
+    left: 43%;
+    text-align: center;
+    filter: invert(48%) sepia(11%) saturate(11%) hue-rotate(324deg) brightness(88%) contrast(87%);
+}
+.sns img:hover{
+    filter: invert(0%) sepia(0%) saturate(27%) hue-rotate(52deg) brightness(90%) contrast(107%);
+    transition: 0.3s;
+}
+
+.Profile{
+    display: flex;
+}
+.info{
+    position: relative;
+    top: 60px;
+    left: 30%;
+    text-align: center;
+}
+
+.info >img{
+    width: 50px;
+    height: 50px;
+    filter: invert(48%) sepia(11%) saturate(11%) hue-rotate(324deg) brightness(88%) contrast(87%);
+}
+.info>img:hover{    filter: invert(0%) sepia(0%) saturate(27%) hue-rotate(52deg) brightness(90%) contrast(107%);}
+.info >li{
+    opacity: 0;
+}
+.info>img:hover~li{
+    opacity: 1;
+}
+
+
+
+
+
+
+

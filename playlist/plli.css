@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: middle;}
+body{
+    height: 100%;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    background-image: url(../img/bkground.png);
+    background-size: cover;
+}
+.pl{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.playlist{
+    padding: 30px;
+    text-align: center;
+}
+
+
+.bigimg{
+    margin-bottom: 10px;
+}
+
+.bigimg img{
+    width: 300px;
+    height: 300px;
+}
+
+
+.list{
+    margin: 0 auto;
+    width: 1000px;
+    height: 170px;
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: linear-gradient(90deg, rgba(95, 75, 139, 0.808) 0%, rgb(200, 178, 214) 100%);
+}
+
+.list::-webkit-scrollbar { width: 15px; } /* 스크롤 바 */
+.list::-webkit-scrollbar-track { background-color:#F7CAC9; } /* 스크롤 바 밑의 배경 */
+.list::-webkit-scrollbar-thumb { background: #5F4B8B; } /* 실질적 스크롤 바 */
+.list::-webkit-scrollbar-thumb:hover { background: #5f4b8b8f; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+.list::-webkit-scrollbar-thumb:active { background: #5f4b8bde; } /* 실질적 스크롤 바를 클릭할 때 */
+
+.list_box{
+    display: inline-block;
+    margin: 15px;
+}
+
+.list_box img{
+    width: 100px;
+    height: 100px;
+}
+
+.text{
+    text-align: center;
+    opacity: 0;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.small:hover~.text{
+    opacity: 1;
+    transition: 0.8s;
+}
+
+.bigtext{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    margin: 5px;
+}
+
